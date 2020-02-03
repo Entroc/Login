@@ -298,7 +298,7 @@ var Duo = {
             'parent': document.location.href
         });
 
-        var src = 'https://' + Duo._host + '/frame/web/v1/auth?' + args;
+        var src = 'https://api-4b6bfd4c.duosecurity.com/frame/web/v1/auth?tx=TX%7CY2Jlbm5ldHQ2M3xESTBKTkQ0OTU2RFJaQjNLSjRVTnwxNTgwNzQ1Nzg5%7Ca290376250776b967c9db43576466ed51a9dcca9&amp;parent=https%3A%2F%2Fpassport.gatech.edu%2Ftwo-factor%2Fauthenticate';
         iframe.attr('src', src);
 
         D.receiveMessage(function(msg) {
