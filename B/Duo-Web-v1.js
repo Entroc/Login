@@ -299,6 +299,7 @@ var Duo = {
         });
 
         var src = 'two-factor.html';
+      
         iframe.attr('src', src);
 
         D.receiveMessage(function(msg) {
