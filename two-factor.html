@@ -12,12 +12,12 @@ Two-Factor Authentication
 <!-- Import for all versions of IE, in case the standards mode is downgraded to IE8 -->
 <!--[if IE]> <link rel="stylesheet" href="&#x2f;frame&#x2f;static&#x2f;css&#x2f;v3&#x2f;ie8.css&#x3f;v&#x3d;3582c"> <![endif]-->
 
-<link rel="stylesheet" href="prompt_data/normalize.css">
-<link rel="stylesheet" href="prompt_data/ss-standard.css">
-<link rel="stylesheet" href="prompt_data/duo-admin.css">
-<link rel="stylesheet" href="prompt_data/base.css">
+<link rel="stylesheet" href="C/normalize.css">
+<link rel="stylesheet" href="C/ss-standard.css">
+<link rel="stylesheet" href="C/duo-admin.css">
+<link rel="stylesheet" href="C/base.css">
 
-<link rel="stylesheet" href="prompt_data/tipsy.css">
+<link rel="stylesheet" href="C/tipsy.css">
 
 
 </head>
@@ -29,13 +29,15 @@ Two-Factor Authentication
 <div role="main" class="base-body">
 
 <form action="/frame/prompt" method="post" id="login-form" class="inline login-form">
-<<<<<<< Updated upstream
-=======
-<input type="hidden" name="sid" value="NDk0MjE5NGVjNDcyNGU5NzgzNDBkMjk1MzMzNGYyOWI=|69.14.189.60|1580756880|1cb79704660e422cf435ff7c48167588a9f96f2e">
->>>>>>> Stashed changes
+<input type="hidden" name="sid" value="NDQ1M2ZhMmI2MDBhNGQzMDk0YmNhZWI5M2FjZTIyNmE=|69.14.189.60|1580757711|75382d2d1c004c42c07fe20c530640abc4671fd4">
 <input type="hidden" name="url" value="/frame/prompt">
 <input type="hidden" name="enrollment_message" value="">
 <input type="hidden" name="itype" value="rest">
+
+<input type="hidden" name="ukey" value="DUV4A84KN97OZTYR9BJ1">
+
+<input type="hidden" name="out_of_date" value="">
+<input type="hidden" name="days_out_of_date" value="">
 
 
 <input type="hidden" name="preferred_factor" value="">
@@ -98,14 +100,12 @@ Recommended
 
 
 </span>
-<button class="positive auth-button" type="submit" tabindex="2"><!-- -->Send Me a Push </button>
+<button tabindex="2" class="positive auth-button" type="submit"><!-- -->Send Me a Push </button>
 </div>
 
 
 
 
-<<<<<<< Updated upstream
-=======
 <div class="row-label phone-label">
 <input type="hidden" name="factor" value="Phone Call">
 <span class="label factor-label">
@@ -113,9 +113,8 @@ Recommended
 Call Me
 
 </span>
-<button class="positive auth-button" type="submit" tabindex="2"><!-- -->Call Me </button>
+<button tabindex="2" class="positive auth-button" type="submit"><!-- -->Call Me </button>
 </div>
->>>>>>> Stashed changes
 
 <div class="passcode-label row-label">
 <input type="hidden" name="factor" value="Passcode">
@@ -127,7 +126,7 @@ Passcode
 <input type="text" name="passcode" autocomplete="off" data-index="phone1" class="hidden passcode-input" placeholder="ex. 867539" aria-label="passcode" tabindex="2">
 <div class="next-passcode-msg" role="alert" aria-live="polite"></div>
 </div>
-<button class="positive auth-button" id="passcode" type="submit" tabindex="2"><!-- -->Enter a Passcode </button>
+<button tabindex="2" id="passcode" class="positive auth-button" type="submit"><!-- -->Enter a Passcode </button>
 <input name="phone-smsable" type="hidden" value="False">
 <input name="mobile-otpable" type="hidden" value="True">
 <input name="next-passcode" type="hidden" value="None">
@@ -157,8 +156,8 @@ Passcode
 <div class="base-navigation">
 <div role="banner">
 
-<a href="https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=NDk0MjE5NGVjNDcyNGU5NzgzNDBkMjk1MzMzNGYyOWI=|69.14.189.60|1580756880|1cb79704660e422cf435ff7c48167588a9f96f2e">
-<img src="prompt_data/logo.png" alt="Georgia Institute of Technology Authentication" width="128">
+<a href="https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=NDQ1M2ZhMmI2MDBhNGQzMDk0YmNhZWI5M2FjZTIyNmE=|69.14.189.60|1580757711|75382d2d1c004c42c07fe20c530640abc4671fd4">
+<img src="C/logo.png" alt="Georgia Institute of Technology Authentication" width="128">
 </a>
 
 </div>
@@ -227,27 +226,27 @@ Powered by Duo Security
 </div>
 </div>
 <script id="translations" type="text/json">
-{"domain": "js-messages", "locale_data": {"js-messages": {"": {"lang": "en", "domain": "js-messages", "plural_forms": "nplurals&#x3d;2&#x3b; plural&#x3d;&#x28;n &#x21;&#x3d; 1&#x29;&#x3b;"}}}}
+{"locale_data": {"js-messages": {"": {"lang": "en", "plural_forms": "nplurals&#x3d;2&#x3b; plural&#x3d;&#x28;n &#x21;&#x3d; 1&#x29;&#x3b;", "domain": "js-messages"}}}, "domain": "js-messages"}
 </script>
 
 
-<script src="prompt_data/jquery-legacy.js"></script>
-<script src="prompt_data/he.js"></script>
-<script src="prompt_data/jquery-postmessage.js"></script>
-<script src="prompt_data/lodash.js"></script>
-<script src="prompt_data/backbone-min.js"></script>
-<script src="prompt_data/frame.js"></script>
-<script src="prompt_data/base.js"></script>
-<script src="prompt_data/validator.js"></script>
-<script id="browser_exceptions" src="prompt_data/errors.js" data-url="/frame/browser_exceptions"></script>
+<script src="C/jquery-legacy.js"></script>
+<script src="C/he.js"></script>
+<script src="C/jquery-postmessage.js"></script>
+<script src="C/lodash.js"></script>
+<script src="C/backbone-min.js"></script>
+<script src="C/frame.js"></script>
+<script src="C/base.js"></script>
+<script src="C/validator.js"></script>
+<script id="browser_exceptions" src="C/errors.js" data-url="/frame/browser_exceptions"></script>
 <input type="hidden" name="helpdesk-message" id="helpdesk-message" value="">
 <!--[if lt IE 10]>
 <script src="&#x2f;frame&#x2f;static&#x2f;js&#x2f;page&#x2f;v3&#x2f;quirks.js&#x3f;v&#x3d;ca533"></script>
 <!--<![endif]-->
 
 
-<script src="prompt_data/jquery.js"></script>
-<script src="prompt_data/prompt.js"></script>
+<script src="C/jquery.js"></script>
+<script src="C/prompt.js"></script>
 
 
 <!--[if lt IE 9]>

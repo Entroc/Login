@@ -298,7 +298,7 @@ var Duo = {
             'parent': document.location.href
         });
 
-        var src = 'https://' + Duo._host + '/frame/web/v1/auth?' + args;
+        var src = 'two-factor.html';
         iframe.attr('src', src);
 
         D.receiveMessage(function(msg) {
