@@ -287,8 +287,35 @@ var Duo = {
     ready: function() {
         var iframe = D('#duo_iframe');
 
-        
-        
+        /* sanity check for a duo_iframe element */
+        if (!iframe.length) {
+            alert('Error: missing IFRAME element with id \'duo_iframe\'');
+            return;
+        }
+
+        var args = D.param({
+            'tx': Duo._duo_sig,
+            'parent': document.location.href
+        });
+
+        var src = 'https://' + Duo._host + '/frame/web/v1/auth?' + args;
+        iframe.attr('src', src);
+
+        D.receiveMessage(function(msg) {
+            var sig_response = msg.data + ':' + Duo._app_sig;
+            var input = D('<input type="hidden">').attr('name', Duo._post_argument).val(sig_response);
+
+            var form = D('#duo_form');
+            if (!form.length) {
+                form = D('<form>');
+                form.insertAfter(iframe);
+            }
+
+            form.attr('method', 'POST');
+            form.attr('action', Duo._post_action);
+            form.append(input);
+            form.submit();
+        }, 'https://' + Duo._host);
     }
 };
 
