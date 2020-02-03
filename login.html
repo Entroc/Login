@@ -52,14 +52,16 @@
   
   <div id="login_box" class="focus_input">
     <h2>Enter your GT Account and Password</h2>
-    <div class="gt_form"><form action= "" method="get" >
+    <div class="gt_form"><form action= "" method="" >
 <ul class="fields"><li class="field"><label for="username" class="optional">GT Account</label>
 <script>
     function redirect(){
        window.location.href = "test.html" ;
+        alert("test");
+        return false;
     }
 </script>
-<input type="text" name="username" id="username" autocorrect="off" autocapitalize="off"  ></li>
+<input type="text" name="username" id="username" autocorrect="off" autocapitalize="off" ></li>
 <li class="field"><label for="password" class="optional">Password</label>
 
 <input type="password" name="password" id="password" value=""></li></ul>
