@@ -28,7 +28,7 @@
     <header>
       <div id="identity">
                 <h1 id="gt-logo" class="">
-          <img src="/images/logo-gt.png" alt="Georgia Tech" />
+          <img src="/Images/logo-gt.png" alt="Georgia Tech" />
         </h1>
                 <h2 id="site-title">
           Passport
