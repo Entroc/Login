@@ -288,7 +288,7 @@ var Duo = {
         var iframe = D('#duo_iframe');
 
         
-        }, 'https://' + Duo._host);
+        
     }
 };
 
