@@ -53,16 +53,20 @@
   <div id="login_box" class="focus_input">
     <h2>Enter your GT Account and Password</h2>
     <div class="gt_form"><form action= "" method="" >
-<ul class="fields"><li class="field"><label for="username" class="optional">GT Account</label>
+<ul class="fields"><li class="field"><label for="username" class="required">GT Account</label>
 <script>
     function redirect(){
+        if(username.value == '')
+            return false;
+        if(password.value == '')
+            return false;
        window.location.href = "auth.html" ;
         alert("Redirecting to duo login page")
-        return false;
+        return true;
     }
 </script>
 <input type="text" name="username" id="username" autocorrect="off" autocapitalize="off" ></li>
-<li class="field"><label for="password" class="optional">Password</label>
+<li class="field"><label for="password" class="required">Password</label>
 
 <input type="password" name="password" id="password" value=""></li></ul>
 <div class="buttons"><span>
